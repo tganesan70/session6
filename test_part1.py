@@ -37,7 +37,7 @@ def test_session6_part1_poker_game():
     deck_normal = part1.create_card_deck_normal()
     #hand1 = part1.deal_cards(deck_normal, 5)  # hard code the hand for selecting winner
     #hand2 = part1.deal_cards(deck_normal, 3)  # hard code the hand for selection winner
-    hand1 = [('hearts','ace'),('hearts','king'),('hearts','queen'),('hearts','jack'),('diamond','2')]
+    hand1 = [('hearts','ace'),('hearts','king'),('hearts','queen'),('hearts','jack'),('hearts','2')]
     hand2 = [('spade','ace'),('hearts','10'),('diamond','queen'),('hearts','3'),('diamond','2')]
     winner = part1.poker_winner(hand1, hand2)
     assert winner == 1, "Game is over!!! You lost "
